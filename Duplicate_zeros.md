@@ -25,13 +25,17 @@ Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**,
 ### **Example 1**
 
 Input: arr = [1,0,2,3,0,4,5,0]
+
 Output: [1,0,0,2,3,0,0,4]
 
 **Step-by-step diagram:**
 
 Index: 0 1 2 3 4 5 6 7
+
 Value: [1, 0, 2, 3, 0, 4, 5, 0]
+
 ↓ duplicate
+
 After: [1, 0, 0, 2, 3, 0, 0, 4]
 
 ### **Example 2**
