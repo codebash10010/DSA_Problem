@@ -1,9 +1,3 @@
-# Duplicate Zeros - Multiple Language Implementations
-
-This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
-
----
-
 ## 📝 Problem Statement
 
 Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**, shifting the remaining elements to the right.
@@ -27,20 +21,23 @@ Input: arr = [1,0,2,3,0,4,5,0]
 Output: [1,0,0,2,3,0,0,4]
 
 yaml
+Always show details
+
 Copy
-Edit
 **Explanation:**  
 Every zero is duplicated, and elements are shifted right. Elements beyond the length of the array are not included.
 
 ---
+
 
 **Example 2:**
 Input: arr = [1,2,3]
 Output: [1,2,3]
 
 cpp
+Always show details
+
 Copy
-Edit
 **Explanation:**  
 No zeros are present, so the array remains unchanged.
 
@@ -94,8 +91,9 @@ int main() {
 }
 Java
 java
+Always show details
+
 Copy
-Edit
 import java.util.Scanner;
 
 class Solution {
@@ -139,8 +137,9 @@ public class Main {
 }
 Python
 python
+Always show details
+
 Copy
-Edit
 class Solution:
     def duplicateZeros(self, arr):
         n = len(arr)
@@ -167,8 +166,9 @@ if __name__ == "__main__":
     print("After duplicating zeros:", *arr)
 JavaScript
 javascript
+Always show details
+
 Copy
-Edit
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -205,25 +205,29 @@ readline.question("Enter number of elements: ", (nStr) => {
 🚀 How to Run
 C++
 bash
+Always show details
+
 Copy
-Edit
 g++ solution.cpp -o solution
 ./solution
 Java
 bash
+Always show details
+
 Copy
-Edit
 javac Main.java
 java Main
 Python
 bash
+Always show details
+
 Copy
-Edit
 python solution.py
 JavaScript
 bash
+Always show details
+
 Copy
-Edit
 node solution.js
 📚 Algorithm Explanation
 We use a two-pointer approach from the end:
