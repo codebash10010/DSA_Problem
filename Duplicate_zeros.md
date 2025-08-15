@@ -23,51 +23,27 @@ Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**,
 ## 📌 Examples
 
 ### **Example 1**
-**Input:**
-arr = [1,0,2,3,0,4,5,0]
 
-makefile
-Copy
-Edit
-**Output:**
-[1,0,0,2,3,0,0,4]
-
-vbnet
-Copy
-Edit
+Input: arr = [1,0,2,3,0,4,5,0]
+Output: [1,0,0,2,3,0,0,4]
 
 **Step-by-step diagram:**
+
 Index: 0 1 2 3 4 5 6 7
 Value: [1, 0, 2, 3, 0, 4, 5, 0]
 ↓ duplicate
 After: [1, 0, 0, 2, 3, 0, 0, 4]
 
-yaml
-Copy
-Edit
-
----
-
 ### **Example 2**
-**Input:**
-arr = [1,2,3]
 
-makefile
-Copy
-Edit
-**Output:**
-[1,2,3]
-
-vbnet
-Copy
-Edit
+Input: arr = [1,2,3]
+Output: [1,2,3]
 
 **Step-by-step diagram:**
+
 [1, 2, 3] → No zeros → No change
 
-yaml
-Copy
-Edit
+
 
 ---
 
@@ -78,7 +54,7 @@ We use a **two-pointer** approach from the end:
 1. Count the total number of zeros in the array.
 2. Use two pointers:
    - `i` → points to the current element in the original array.
-   - `j` → points to the position in the "virtual" extended array (original length + zeros count).
+   - `j` → points to the position in the "virtual" extended array (`n + zeros` length).
 3. Traverse backward:
    - If `arr[i]` is not zero, copy it to `arr[j]` if `j < n`.
    - If `arr[i]` is zero, write zero twice (if `j < n`) and adjust `j`.
@@ -127,18 +103,21 @@ int main() {
     vector<int> arr(n);
     cout << "Enter elements: ";
     for (int i = 0; i < n; i++) cin >> arr[i];
-
     Solution sol;
     sol.duplicateZeros(arr);
-
     cout << "After duplicating zeros: ";
     for (int num : arr) cout << num << " ";
     cout << endl;
+    return 0;
 }
-Java
-java
-Copy
-Edit
+
+
+```
+---
+
+### **Java**
+```java
+
 import java.util.Scanner;
 
 class Solution {
@@ -171,19 +150,21 @@ public class Main {
         int[] arr = new int[n];
         System.out.println("Enter elements:");
         for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
-
         Solution sol = new Solution();
         sol.duplicateZeros(arr);
-
         System.out.print("After duplicating zeros: ");
         for (int num : arr) System.out.print(num + " ");
         System.out.println();
     }
 }
-Python
-python
-Copy
-Edit
+
+```
+
+---
+
+### **Python**
+```python
+
 class Solution:
     def duplicateZeros(self, arr):
         n = len(arr)
@@ -208,10 +189,14 @@ if __name__ == "__main__":
     sol = Solution()
     sol.duplicateZeros(arr)
     print("After duplicating zeros:", *arr)
-JavaScript
-javascript
-Copy
-Edit
+
+```
+
+---
+
+### **JavaScript**
+```javascript
+
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -245,36 +230,96 @@ readline.question("Enter number of elements: ", (nStr) => {
         readline.close();
     });
 });
-🚀 How to Run
-C++
-bash
-Copy
-Edit
+
+
+```
+
+---
+
+## 🚀 How to Run
+
+### **C++**
+```bash
 g++ solution.cpp -o solution
 ./solution
-Java
-bash
-Copy
-Edit
-javac Main.java
-java Main
-Python
-bash
-Copy
-Edit
+```
+
+### **Java**
+```bash
+javac Solution.java
+java Solution
+```
+
+### **Python**
+```bash
 python solution.py
-JavaScript
-bash
-Copy
-Edit
+```
+
+### **JavaScript**
+```bash
 node solution.js
-markdown
-Copy
-Edit
+```
 
 ---
 
 
+## Algorithm: Duplicate Zeros
+
+**Goal:** Modify the given array in-place so that each `0` is duplicated, and the rest of the elements are shifted to the right.  
+> Elements that go beyond the length of the array are **discarded**.
+
+---
+
+### Step-by-Step Explanation
+
+1. **Understand the shifting problem**  
+   - When we duplicate a zero, it pushes all subsequent elements one position to the right.  
+   - If we do this naively from left to right, we’ll overwrite elements we haven’t processed yet.
+
+2. **Count the zeros to be duplicated**  
+   - First, traverse the array to count how many zeros **will actually be duplicated** without exceeding the array length.
+
+3. **Use two pointers**  
+   - One pointer (`i`) will move over the **original array** from the end.  
+   - Another pointer (`j`) will represent the **new position** of elements after duplication (starting from the end).
+
+4. **Start from the end to avoid overwriting**  
+   - Begin from the last original index and move backwards.  
+   - If `arr[i]` is not zero → copy it to `arr[j]`.  
+   - If `arr[i]` is zero → write zero twice (duplicate) in `arr[j]` and `arr[j-1]`.
+
+5. **Stop when we fill the array**  
+   - Since `j` can exceed the array’s bounds, only fill elements when `j < arr.length`.
+
+---
+
+### Example Walkthrough
+
+**Input:**  
+
+[1, 0, 2, 3, 0, 4, 5, 0]
 
 
+```
 
+- Count zeros: There are 3 zeros.  
+- Process from the end:  
+
+| i  | j  | Action                          | Array after step            |
+|----|----|--------------------------------|------------------------------|
+| 7  | 10 | Out of range, skip             |                              |
+| 7  | 9  | Zero → write two 0’s at j=9,8  | [..., 0, 0]                  |
+| 6  | 7  | Copy 5 to position 7           | [..., 5, 0, 0]               |
+| 5  | 6  | Copy 4 to position 6           | [..., 4, 5, 0, 0]            |
+| 4  | 5  | Zero → write two 0’s at j=5,4  | [..., 0, 0, 4, 5, 0, 0]      |
+| 3  | 3  | Copy 3                         | [1, 0, 2, 3, 0, 0, 4, 5, 0, 0] |
+| 2  | 2  | Copy 2                         |                              |
+| 1  | 1  | Zero → duplicate if space      |                              |
+| 0  | 0  | Copy 1                         | Final: [1, 0, 0, 2, 3, 0, 0, 4]  
+
+---
+
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)` (in-place modification)
+
+```
