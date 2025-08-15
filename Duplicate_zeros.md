@@ -1,4 +1,4 @@
-# Duplicate Zeros - Multiple Language Implementations
+# Duplicate Zeros - 
 
 This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
 
