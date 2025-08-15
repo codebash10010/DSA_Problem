@@ -22,23 +22,25 @@ Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**,
 
 ## 📌 Input / Output Example
 
-
 **Example 1:**
-
 Input: arr = [1,0,2,3,0,4,5,0]
 Output: [1,0,0,2,3,0,0,4]
 
+yaml
+Copy
+Edit
 **Explanation:**  
 Every zero is duplicated, and elements are shifted right. Elements beyond the length of the array are not included.
 
 ---
 
-
 **Example 2:**
-
 Input: arr = [1,2,3]
 Output: [1,2,3]
 
+cpp
+Copy
+Edit
 **Explanation:**  
 No zeros are present, so the array remains unchanged.
 
@@ -90,10 +92,10 @@ int main() {
     for (int num : arr) cout << num << " ";
     cout << endl;
 }
-
-
-☕ Java Code
-
+Java
+java
+Copy
+Edit
 import java.util.Scanner;
 
 class Solution {
@@ -117,8 +119,6 @@ class Solution {
         }
     }
 }
- 
-
 
 public class Main {
     public static void main(String[] args) {
@@ -137,9 +137,10 @@ public class Main {
         System.out.println();
     }
 }
-
-🐍 Python Code
-
+Python
+python
+Copy
+Edit
 class Solution:
     def duplicateZeros(self, arr):
         n = len(arr)
@@ -164,10 +165,10 @@ if __name__ == "__main__":
     sol = Solution()
     sol.duplicateZeros(arr)
     print("After duplicating zeros:", *arr)
-
-
-🌐 JavaScript Code
-
+JavaScript
+javascript
+Copy
+Edit
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -201,26 +202,30 @@ readline.question("Enter number of elements: ", (nStr) => {
         readline.close();
     });
 });
-
-
-
 🚀 How to Run
 C++
+bash
+Copy
+Edit
 g++ solution.cpp -o solution
 ./solution
-
 Java
+bash
+Copy
+Edit
 javac Main.java
 java Main
-
 Python
+bash
+Copy
+Edit
 python solution.py
-
 JavaScript
+bash
+Copy
+Edit
 node solution.js
-
 📚 Algorithm Explanation
-
 We use a two-pointer approach from the end:
 
 Count the total number of zeros in the array.
