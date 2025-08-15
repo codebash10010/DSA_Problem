@@ -1,3 +1,9 @@
+# Duplicate Zeros - Multiple Language Implementations
+
+This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
+
+---
+
 ## 📝 Problem Statement
 
 Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**, shifting the remaining elements to the right.
@@ -14,36 +20,76 @@ Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**,
 
 ---
 
-## 📌 Input / Output Example
+## 📌 Examples
 
-**Example 1:**
-Input: arr = [1,0,2,3,0,4,5,0]
-Output: [1,0,0,2,3,0,0,4]
+### **Example 1**
+**Input:**
+arr = [1,0,2,3,0,4,5,0]
+
+makefile
+Copy
+Edit
+**Output:**
+[1,0,0,2,3,0,0,4]
+
+vbnet
+Copy
+Edit
+
+**Step-by-step diagram:**
+Index: 0 1 2 3 4 5 6 7
+Value: [1, 0, 2, 3, 0, 4, 5, 0]
+↓ duplicate
+After: [1, 0, 0, 2, 3, 0, 0, 4]
 
 yaml
-Always show details
-
 Copy
-**Explanation:**  
-Every zero is duplicated, and elements are shifted right. Elements beyond the length of the array are not included.
+Edit
 
 ---
 
+### **Example 2**
+**Input:**
+arr = [1,2,3]
 
-**Example 2:**
-Input: arr = [1,2,3]
-Output: [1,2,3]
-
-cpp
-Always show details
-
+makefile
 Copy
-**Explanation:**  
-No zeros are present, so the array remains unchanged.
+Edit
+**Output:**
+[1,2,3]
+
+vbnet
+Copy
+Edit
+
+**Step-by-step diagram:**
+[1, 2, 3] → No zeros → No change
+
+yaml
+Copy
+Edit
 
 ---
 
-## 📌 Implementations
+## 📚 Algorithm Explanation
+
+We use a **two-pointer** approach from the end:
+
+1. Count the total number of zeros in the array.
+2. Use two pointers:
+   - `i` → points to the current element in the original array.
+   - `j` → points to the position in the "virtual" extended array (original length + zeros count).
+3. Traverse backward:
+   - If `arr[i]` is not zero, copy it to `arr[j]` if `j < n`.
+   - If `arr[i]` is zero, write zero twice (if `j < n`) and adjust `j`.
+4. Stop when `i` reaches the beginning.
+
+**Time Complexity:** `O(n)`  
+**Space Complexity:** `O(1)`
+
+---
+
+## 💻 Implementations
 
 ### **C++**
 ```cpp
@@ -79,7 +125,7 @@ int main() {
     cout << "Enter number of elements: ";
     cin >> n;
     vector<int> arr(n);
-    cout << "Enter the elements: ";
+    cout << "Enter elements: ";
     for (int i = 0; i < n; i++) cin >> arr[i];
 
     Solution sol;
@@ -91,9 +137,8 @@ int main() {
 }
 Java
 java
-Always show details
-
 Copy
+Edit
 import java.util.Scanner;
 
 class Solution {
@@ -137,9 +182,8 @@ public class Main {
 }
 Python
 python
-Always show details
-
 Copy
+Edit
 class Solution:
     def duplicateZeros(self, arr):
         n = len(arr)
@@ -166,9 +210,8 @@ if __name__ == "__main__":
     print("After duplicating zeros:", *arr)
 JavaScript
 javascript
-Always show details
-
 Copy
+Edit
 const readline = require("readline").createInterface({
     input: process.stdin,
     output: process.stdout,
@@ -205,48 +248,33 @@ readline.question("Enter number of elements: ", (nStr) => {
 🚀 How to Run
 C++
 bash
-Always show details
-
 Copy
+Edit
 g++ solution.cpp -o solution
 ./solution
 Java
 bash
-Always show details
-
 Copy
+Edit
 javac Main.java
 java Main
 Python
 bash
-Always show details
-
 Copy
+Edit
 python solution.py
 JavaScript
 bash
-Always show details
-
 Copy
+Edit
 node solution.js
-📚 Algorithm Explanation
-We use a two-pointer approach from the end:
+markdown
+Copy
+Edit
 
-Count the total number of zeros in the array.
+---
 
-Use two pointers:
 
-i → points to the current element in the original array.
 
-j → points to the position in the "virtual" extended array (original length + zeros count).
 
-Traverse backward:
 
-If arr[i] is not zero, copy it to arr[j] if j < n.
-
-If arr[i] is zero, write zero twice (if j < n) and adjust j.
-
-Stop when i reaches the beginning.
-
-Time Complexity: O(n)
-Space Complexity: O(1)
