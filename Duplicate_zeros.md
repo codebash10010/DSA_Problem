@@ -1,11 +1,16 @@
-# 🧩 Duplicate Zeros
+# Duplicate Zeros - Multiple Language Implementations
 
-## 🔹 Problem Description
-Given a fixed-length integer array `arr`, duplicate each occurrence of zero, shifting the remaining elements to the right.
+This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
 
-> Note:
-> - Elements beyond the length of the original array are not written.
-> - Perform the modifications **in place** without returning anything.
+---
+
+## 📝 Problem Statement
+
+Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**, shifting the remaining elements to the right.
+
+**Important:**
+- Elements beyond the length of the original array are **not written**.
+- Perform the modifications **in place** and **do not return anything**.
 
 ---
 
@@ -15,38 +20,33 @@ Given a fixed-length integer array `arr`, duplicate each occurrence of zero, shi
 
 ---
 
-## 📍 Example
+## 📌 Input / Output Example
+
 
 **Example 1:**
 
 Input: arr = [1,0,2,3,0,4,5,0]
 Output: [1,0,0,2,3,0,0,4]
 
-Explanation: Each zero is duplicated, shifting the rest of the elements.
+**Explanation:**  
+Every zero is duplicated, and elements are shifted right. Elements beyond the length of the array are not included.
+
+---
+
 
 **Example 2:**
 
 Input: arr = [1,2,3]
 Output: [1,2,3]
 
-Explanation: No zero found, so array remains unchanged.
-
-
----
-
-## 💡 Approach
-We use a **two-pointer** technique from the end:
-
-1. Count the number of zeros in the array.
-2. Start from the end of the array and shift elements right, duplicating zeros where necessary.
-3. Use conditions to avoid overwriting beyond array length.
-
-**Time Complexity:** `O(n)`  
-**Space Complexity:** `O(1)`
+**Explanation:**  
+No zeros are present, so the array remains unchanged.
 
 ---
 
-## 💻 C++ Code
+## 📌 Implementations
+
+### **C++**
 ```cpp
 #include <iostream>
 #include <vector>
@@ -80,7 +80,7 @@ int main() {
     cout << "Enter number of elements: ";
     cin >> n;
     vector<int> arr(n);
-    cout << "Enter elements: ";
+    cout << "Enter the elements: ";
     for (int i = 0; i < n; i++) cin >> arr[i];
 
     Solution sol;
@@ -89,9 +89,8 @@ int main() {
     cout << "After duplicating zeros: ";
     for (int num : arr) cout << num << " ";
     cout << endl;
-
-    return 0;
 }
+
 
 ☕ Java Code
 
@@ -202,3 +201,43 @@ readline.question("Enter number of elements: ", (nStr) => {
         readline.close();
     });
 });
+
+
+
+🚀 How to Run
+C++
+g++ solution.cpp -o solution
+./solution
+
+Java
+javac Main.java
+java Main
+
+Python
+python solution.py
+
+JavaScript
+node solution.js
+
+📚 Algorithm Explanation
+
+We use a two-pointer approach from the end:
+
+Count the total number of zeros in the array.
+
+Use two pointers:
+
+i → points to the current element in the original array.
+
+j → points to the position in the "virtual" extended array (original length + zeros count).
+
+Traverse backward:
+
+If arr[i] is not zero, copy it to arr[j] if j < n.
+
+If arr[i] is zero, write zero twice (if j < n) and adjust j.
+
+Stop when i reaches the beginning.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
