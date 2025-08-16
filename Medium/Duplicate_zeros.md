@@ -35,7 +35,7 @@ Input: arr = [1,0,2,3,0,4,5,0]
 
 Output: [1,0,0,2,3,0,0,4]
 
-**Step-by-step diagram:**
+**Step-by-step :**
 
 Index: 0 1 2 3 4 5 6 7
 
@@ -50,7 +50,7 @@ After: [1, 0, 0, 2, 3, 0, 0, 4]
 Input: arr = [1,2,3]
 Output: [1,2,3]
 
-**Step-by-step diagram:**
+**Step-by-step :**
 
 [1, 2, 3] → No zeros → No change
 
@@ -126,7 +126,7 @@ Think about what happens when you see a zero:
 **Goal:** Modify the given array in-place so that each `0` is duplicated, and the rest of the elements are shifted to the right.  
 > Elements that go beyond the length of the array are **discarded**.
 
----
+
 
 ### Step-by-Step Explanation
 
