@@ -261,6 +261,14 @@ python solution.py
 ```bash
 node solution.js
 ```
+---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
+
+---
 
 ---
 
