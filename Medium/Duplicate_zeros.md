@@ -4,6 +4,14 @@ This repository contains solutions for the **"Duplicate Zeros"** problem impleme
 
 ---
 
+## 🔗 Problem Link
+You can find the original problem here:  
+👉 https://leetcode.com/problems/duplicate-zeros/description/
+
+
+
+---
+
 ## 📝 Problem Statement
 
 Given a fixed-length integer array `arr`, **duplicate each occurrence of zero**, shifting the remaining elements to the right.
