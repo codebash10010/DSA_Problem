@@ -4,6 +4,14 @@ This repository contains solutions for the **"Rearrange Array Elements by Sign"*
 
 ---
 
+## 🔗 Problem Link
+You can find the original problem here:  
+👉 https://leetcode.com/problems/rearrange-array-elements-by-sign/
+
+---
+
+
+
 ## 📝 Problem Statement
 
 You are given a **0-indexed integer array `nums` of even length** consisting of an **equal number of positive and negative integers**.
