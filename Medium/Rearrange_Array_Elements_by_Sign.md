@@ -1,6 +1,7 @@
 # Rearrange Array Elements by Sign - (LeetCode :- 2149)
 
-This repository contains solutions for the **"Rearrange Array Elements by Sign"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
+## 🏢 Companies Asked :- Amazon , Microsoft , Google , Bloomberg , Adobe  
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
 ---
 
@@ -9,7 +10,6 @@ You can find the original problem here:
 👉 https://leetcode.com/problems/rearrange-array-elements-by-sign/
 
 ---
-
 
 
 ## 📝 Problem Statement
@@ -74,6 +74,8 @@ Rearrange → [1, -1]
 
 ---
 
+
+
 ## 📚 Algorithm Explanation
 
 We maintain **two pointers**:
@@ -89,6 +91,8 @@ Since both positives and negatives are equal in count, this will always produce 
 **Space Complexity:** `O(n)` (can’t be done in-place while preserving order).
 
 ---
+
+
 
 ## 💻 Implementations
 
@@ -260,11 +264,5 @@ node solution.js
 
 ---
 
-## 📺 YouTube Explanation
-
-For a detailed step-by-step explanation of this problem, check out the video here:  
-👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
-
----
 
 
