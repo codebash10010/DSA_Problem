@@ -75,6 +75,33 @@ Rearrange → [1, -1]
 ---
 
 
+## 💡 Intuition Behind the Approach
+
+Think about what the problem is asking:  
+
+✅ We need positives and negatives **alternating**  
+✅ The **order** of positives and negatives must be **preserved**  
+✅ The array must start with a **positive**  
+
+👉 Since we are guaranteed equal numbers of positive and negative integers, the solution becomes straightforward:  
+
+1. **Separate** all positives and all negatives into two lists.  
+   - Example: `nums = [3,1,-2,-5,2,-4]`  
+     - Positives → `[3, 1, 2]`  
+     - Negatives → `[-2, -5, -4]`  
+
+2. **Rebuild the array** by picking alternately:  
+   - Take from positives → Take from negatives → repeat.  
+
+3. This ensures:  
+   - ✔️ Starts with a positive  
+   - ✔️ Alternates correctly  
+   - ✔️ Preserves order  
+
+🔑 **Key Idea:** We don’t need to overcomplicate. Just treat positives and negatives as two queues and merge them in alternating order.
+
+
+
 
 ## 📚 Algorithm Explanation
 
