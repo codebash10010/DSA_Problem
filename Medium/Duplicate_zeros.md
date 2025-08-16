@@ -1,13 +1,12 @@
 # Duplicate Zeros - (LeetCode :- 1089)
 
-This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
-
+## 🏢 Companies Asked :- Amazon , Microsoft ,Google , Adobe  , Facebook  
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 ---
 
 ## 🔗 Problem Link
 You can find the original problem here:  
 👉 https://leetcode.com/problems/duplicate-zeros/description/
-
 
 
 ---
@@ -98,7 +97,29 @@ Output: [1,2,3]
 
 
 ```
+---
 
+## 💡 Intuition Behind the Approach
+
+Think about what happens when you see a zero:  
+
+✅ You need to insert one **extra zero** right after it.  
+✅ But inserting would **push elements rightward**, possibly overwriting others.  
+
+👉 To avoid overwriting, we use a **two-pointer strategy from the back**:  
+
+1. **Count the zeros** that will be duplicated.  
+2. Use two pointers:  
+   - `i` → original index  
+   - `j` → "virtual new index" (accounting for duplicates)  
+3. Traverse **backwards**:  
+   - If `arr[i]` is non-zero → copy it to `arr[j]`  
+   - If `arr[i]` is zero → write two zeros (`arr[j]` and `arr[j-1]`)  
+4. Stop when `j` runs past the array.  
+
+🔑 **Key Idea:** Process from **end to start** so that future elements don’t get overwritten.  
+
+---
 
 ## Algorithm: Duplicate Zeros
 
@@ -324,6 +345,13 @@ python solution.py
 ```bash
 node solution.js
 ```
+
+---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
 
 ---
 
