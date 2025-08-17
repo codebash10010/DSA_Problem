@@ -1,54 +1,59 @@
-📘 DSA Problem Set - README
+# 📘 DSA Problem Set - README
+---
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+👉 [Follow Us on InstaGram]([https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5](https://www.instagram.com/codebash.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==))
+---
 
-Welcome to the DSA Problem Set Repository 🎯
+Welcome to the **DSA Problem Set Repository** 🎯
 This repository contains problems categorized into three levels:
 
-🟢 Easy
-
-🟡 Medium
-
-🔴 Hard
+- 🟢 **Easy**
+- 🟡 **Medium**
+- 🔴 **Hard**
 
 Each problem is well-documented with explanations, examples, and solutions in multiple languages.
 
-📑 What You’ll Find Here
+---
+
+## 📑 What You’ll Find Here
 
 For every problem in this repository, you will get:
 
-📌 Problem Statement – Clearly explained with constraints.
+- **📌 Problem Statement** – Clearly explained with constraints.
+- **🌍 Platform** – Source platform (e.g., LeetCode, GFG, Codeforces, etc.).
+- **🏢 Company Asked** – List of companies where this problem was asked.
+- **📖 Explanation** – Step-by-step breakdown of the logic.
+- **🧮 Example** – Input/output with dry run explanation.
+- **💻 Solutions in 4 Languages**:
 
-🌍 Platform – Source platform (e.g., LeetCode, GFG, Codeforces, etc.).
-
-🏢 Company Asked – List of companies where this problem was asked.
-
-📖 Explanation – Step-by-step breakdown of the logic.
-
-🧮 Example – Input/output with dry run explanation.
-
-💻 Solutions in 4 Languages:
-
-🔹 C++
-
+### 🔹 C++
+```cpp
 // C++ solution here
+```
 
-🔹 Java
-
+### 🔹 Java
+```java
 // Java solution here
+```
 
-🔹 Python
-
+### 🔹 Python
+```python
 # Python solution here
+```
 
-🔹 JavaScript
-
+### 🔹 JavaScript
+```javascript
 // JavaScript solution here
+```
 
-🔗 Resources – Related study materials, notes, and helpful links.
+- **🔗 Resources** – Related study materials, notes, and helpful links.
+- **⏱️ Time & Space Complexity** – Analyzed for each solution.
 
-⏱️ Time & Space Complexity – Analyzed for each solution.
+---
 
-📂 Repository Structure
+## 📂 Repository Structure
 
+```bash
 DSA/
 │── Easy/
 │   ├── problem1/
@@ -76,17 +81,21 @@ DSA/
 │   │   ├── solution.py
 │   │   └── solution.js
 │   └── ...
+```
 
-🙏 Thanks & Contribution
+---
+
+## 🙏 Thanks & Contribution
 
 If you find this repository helpful:
+- ⭐ Star this repo to support the work.
+- 🍴 Fork it and contribute by adding problems/solutions.
+- 📝 Open issues for corrections or improvements.
 
-⭐ Star this repo to support the work.
+📺 Also, check out my YouTube channel for detailed explanations and tutorials:  
+[![YouTube](https://img.shields.io/badge/YouTube-Codebash-red?logo=youtube&style=for-the-badge)](https://www.youtube.com/@codebash)
 
-🍴 Fork it and contribute by adding problems/solutions.
-
-📝 Open issues for corrections or improvements.
-
-📺 Also, check out my YouTube channel for detailed explanations and tutorials:
+---
 
 🚀 Happy Coding & Keep Practicing DSA! 💻
+
