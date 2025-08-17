@@ -1,7 +1,8 @@
 # 📘 DSA Problem Set - README
 ---
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
-👉 [Follow Us on InstaGram]([https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5](https://www.instagram.com/codebash.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==))
+---
+👉 [Follow Us on InstaGram](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5](https://www.instagram.com/codebash.official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==))
 ---
 
 Welcome to the **DSA Problem Set Repository** 🎯
