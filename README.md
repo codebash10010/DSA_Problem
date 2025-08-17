@@ -93,9 +93,6 @@ If you find this repository helpful:
 - 🍴 Fork it and contribute by adding problems/solutions.
 - 📝 Open issues for corrections or improvements.
 
-📺 Also, check out my YouTube channel for detailed explanations and tutorials:  
-[![YouTube](https://img.shields.io/badge/YouTube-Codebash-red?logo=youtube&style=for-the-badge)](https://www.youtube.com/@codebash)
-
 ---
 
 🚀 Happy Coding & Keep Practicing DSA! 💻
