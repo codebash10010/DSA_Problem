@@ -95,10 +95,7 @@ If you find this repository helpful:
 
 
 ---
-## 🔎 SEO & Tags  
 DSA, Data Structures, Algorithms, Coding Problems, Easy Medium Hard, C++ DSA, Java DSA, Python DSA, JavaScript DSA, Competitive Programming, Interview Prep, LeetCode Solutions, GFG Solutions, TCS NQT, Amazon Interview Questions, Google Interview Prep
-
-
 ---
 
 🚀 Happy Coding & Keep Practicing DSA! 💻
