@@ -1,6 +1,13 @@
-# Duplicate Zeros 
+# Duplicate Zeros - (LeetCode :- 1089)
 
-This repository contains solutions for the **"Duplicate Zeros"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
+## 🏢 Companies Asked :- Amazon , Microsoft ,Google , Adobe  , Facebook  
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+---
+
+## 🔗 Problem Link
+You can find the original problem here:  
+👉 https://leetcode.com/problems/duplicate-zeros/description/
+
 
 ---
 
@@ -28,7 +35,7 @@ Input: arr = [1,0,2,3,0,4,5,0]
 
 Output: [1,0,0,2,3,0,0,4]
 
-**Step-by-step diagram:**
+**Step-by-step :**
 
 Index: 0 1 2 3 4 5 6 7
 
@@ -43,7 +50,7 @@ After: [1, 0, 0, 2, 3, 0, 0, 4]
 Input: arr = [1,2,3]
 Output: [1,2,3]
 
-**Step-by-step diagram:**
+**Step-by-step :**
 
 [1, 2, 3] → No zeros → No change
 
@@ -90,14 +97,36 @@ Output: [1,2,3]
 
 
 ```
+---
 
+## 💡 Intuition Behind the Approach
+
+Think about what happens when you see a zero:  
+
+✅ You need to insert one **extra zero** right after it.  
+✅ But inserting would **push elements rightward**, possibly overwriting others.  
+
+👉 To avoid overwriting, we use a **two-pointer strategy from the back**:  
+
+1. **Count the zeros** that will be duplicated.  
+2. Use two pointers:  
+   - `i` → original index  
+   - `j` → "virtual new index" (accounting for duplicates)  
+3. Traverse **backwards**:  
+   - If `arr[i]` is non-zero → copy it to `arr[j]`  
+   - If `arr[i]` is zero → write two zeros (`arr[j]` and `arr[j-1]`)  
+4. Stop when `j` runs past the array.  
+
+🔑 **Key Idea:** Process from **end to start** so that future elements don’t get overwritten.  
+
+---
 
 ## Algorithm: Duplicate Zeros
 
 **Goal:** Modify the given array in-place so that each `0` is duplicated, and the rest of the elements are shifted to the right.  
 > Elements that go beyond the length of the array are **discarded**.
 
----
+
 
 ### Step-by-Step Explanation
 
@@ -316,6 +345,13 @@ python solution.py
 ```bash
 node solution.js
 ```
+
+---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
 
 ---
 

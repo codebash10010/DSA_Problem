@@ -1,8 +1,16 @@
 # Rearrange Array Elements by Sign - (LeetCode :- 2149)
 
-This repository contains solutions for the **"Rearrange Array Elements by Sign"** problem implemented in **C++**, **Java**, **Python**, and **JavaScript**.
+## 🏢 Companies Asked :- Amazon , Microsoft , Google , Bloomberg , Adobe  
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
 ---
+
+## 🔗 Problem Link
+You can find the original problem here:  
+👉 https://leetcode.com/problems/rearrange-array-elements-by-sign/
+
+---
+
 
 ## 📝 Problem Statement
 
@@ -66,6 +74,35 @@ Rearrange → [1, -1]
 
 ---
 
+
+## 💡 Intuition Behind the Approach
+
+Think about what the problem is asking:  
+
+✅ We need positives and negatives **alternating**  
+✅ The **order** of positives and negatives must be **preserved**  
+✅ The array must start with a **positive**  
+
+👉 Since we are guaranteed equal numbers of positive and negative integers, the solution becomes straightforward:  
+
+1. **Separate** all positives and all negatives into two lists.  
+   - Example: `nums = [3,1,-2,-5,2,-4]`  
+     - Positives → `[3, 1, 2]`  
+     - Negatives → `[-2, -5, -4]`  
+
+2. **Rebuild the array** by picking alternately:  
+   - Take from positives → Take from negatives → repeat.  
+
+3. This ensures:  
+   - ✔️ Starts with a positive  
+   - ✔️ Alternates correctly  
+   - ✔️ Preserves order  
+
+🔑 **Key Idea:** We don’t need to overcomplicate. Just treat positives and negatives as two queues and merge them in alternating order.
+
+
+
+
 ## 📚 Algorithm Explanation
 
 We maintain **two pointers**:
@@ -81,6 +118,8 @@ Since both positives and negatives are equal in count, this will always produce 
 **Space Complexity:** `O(n)` (can’t be done in-place while preserving order).
 
 ---
+
+
 
 ## 💻 Implementations
 
@@ -249,14 +288,15 @@ python solution.py
 ```bash
 node solution.js
 ```
+---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
 
 ---
 
-## 📺 YouTube Explanation
 
-For a detailed step-by-step explanation of this problem, check out the video here:  
-👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
-
----
 
 
