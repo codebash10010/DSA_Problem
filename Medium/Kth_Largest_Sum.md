@@ -64,55 +64,7 @@ Output: 3
 1. Level Order Traversal (BFS) to compute sums per level.
 2. Store sums and sort them to find k-th largest.
 
-## Python Solution
 
-```python
-from collections import deque
-
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-def kthLargestLevelSum(root: TreeNode, k: int) -> int:
-    if not root:
-        return -1
-
-    queue = deque([root])
-    level_sums = []
-
-    while queue:
-        level_size = len(queue)
-        level_sum = 0
-        for _ in range(level_size):
-            node = queue.popleft()
-            level_sum += node.val
-            if node.left:
-                queue.append(node.left)
-            if node.right:
-                queue.append(node.right)
-        level_sums.append(level_sum)
-
-    level_sums.sort(reverse=True)
-    return level_sums[k-1] if k <= len(level_sums) else -1
-
-# Driver Code
-if __name__ == '__main__':
-    n = int(input("Enter number of nodes: "))
-    nodes = list(map(int, input(f"Enter {n} node values: ").split()))
-    k = int(input("Enter k: "))
-    
-    # Create simple binary tree from list for demo purposes
-    tree_nodes = [TreeNode(val) for val in nodes]
-    for i in range(n):
-        if 2*i + 1 < n:
-            tree_nodes[i].left = tree_nodes[2*i + 1]
-        if 2*i + 2 < n:
-            tree_nodes[i].right = tree_nodes[2*i + 2]
-    root = tree_nodes[0]
-    print(kthLargestLevelSum(root, k))
-```
 
 ## C++ Solution
 
@@ -220,6 +172,55 @@ public class KthLargestLevelSum {
         System.out.println(kthLargestLevelSum(nodes[0], k));
     }
 }
+```
+## Python Solution
+
+```python
+from collections import deque
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def kthLargestLevelSum(root: TreeNode, k: int) -> int:
+    if not root:
+        return -1
+
+    queue = deque([root])
+    level_sums = []
+
+    while queue:
+        level_size = len(queue)
+        level_sum = 0
+        for _ in range(level_size):
+            node = queue.popleft()
+            level_sum += node.val
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
+        level_sums.append(level_sum)
+
+    level_sums.sort(reverse=True)
+    return level_sums[k-1] if k <= len(level_sums) else -1
+
+# Driver Code
+if __name__ == '__main__':
+    n = int(input("Enter number of nodes: "))
+    nodes = list(map(int, input(f"Enter {n} node values: ").split()))
+    k = int(input("Enter k: "))
+    
+    # Create simple binary tree from list for demo purposes
+    tree_nodes = [TreeNode(val) for val in nodes]
+    for i in range(n):
+        if 2*i + 1 < n:
+            tree_nodes[i].left = tree_nodes[2*i + 1]
+        if 2*i + 2 < n:
+            tree_nodes[i].right = tree_nodes[2*i + 2]
+    root = tree_nodes[0]
+    print(kthLargestLevelSum(root, k))
 ```
 
 ## JavaScript Solution
