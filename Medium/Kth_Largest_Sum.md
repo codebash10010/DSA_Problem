@@ -45,6 +45,20 @@ Output: 3
 * `1 <= Node.val <= 10^6`
 * `1 <= k <= n`
 
+### Intuition
+
+To solve this problem efficiently, we can use a level-order traversal (BFS) because it allows us to process nodes level by level:
+
+Traverse the tree using a queue.
+
+For each level, calculate the sum of all nodes at that level.
+
+Store these sums in a list.
+
+Sort the list of sums in descending order and return the k-th largest.
+
+This approach guarantees that each node is visited exactly once, and we only need to sort the sums of levels, which is much smaller than the total number of nodes.
+
 ## Approach
 
 1. Level Order Traversal (BFS) to compute sums per level.
