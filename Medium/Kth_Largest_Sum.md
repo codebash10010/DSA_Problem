@@ -8,7 +8,7 @@
 ## 🔗 Problem Link
 You can find the original problem here:  
 
-👉 https://leetcode.com/problems/adding-spaces-to-a-string/](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/
+👉 https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/
 
 ---
 
