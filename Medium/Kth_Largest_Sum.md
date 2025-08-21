@@ -1,8 +1,16 @@
 # 2583. Kth Largest Sum in a Binary Tree
+## 🏢 Companies Asked:- Amazon, Google, Microsoft, Meta
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
-**Difficulty:** Medium
-**Topics:** Binary Tree, BFS, Level Sum, Priority Queue
-**Companies:** Premium
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+---
+
+## 🔗 Problem Link
+You can find the original problem here:  
+
+👉 https://leetcode.com/problems/adding-spaces-to-a-string/](https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/
+
+---
 
 ## Problem Statement
 
