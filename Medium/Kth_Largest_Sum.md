@@ -45,8 +45,8 @@ Output: 3
 * `1 <= Node.val <= 10^6`
 * `1 <= k <= n`
 
-### Intuition
-
+ ## 💡 Intuition Behind the Approach
+---
 To solve this problem efficiently, we can use a level-order traversal (BFS) because it allows us to process nodes level by level:
 
 Traverse the tree using a queue.
