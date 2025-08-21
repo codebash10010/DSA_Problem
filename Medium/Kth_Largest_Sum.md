@@ -14,13 +14,13 @@ You can find the original problem here:
 
 ## Problem Statement
 
-✅You are given the root of a binary tree and a positive integer `k`.
+You are given the root of a binary tree and a positive integer `k`.
 
-✅The **level sum** in the tree is the sum of the values of the nodes that are on the same level.
+The **level sum** in the tree is the sum of the values of the nodes that are on the same level.
 
-✅Return the `k`th largest level sum in the tree (not necessarily distinct). If there are fewer than `k` levels in the tree, return `-1`.
+Return the `k`th largest level sum in the tree (not necessarily distinct). If there are fewer than `k` levels in the tree, return `-1`.
 
-✅> Note that two nodes are on the same level if they have the same distance from the root.
+**-> Note** that two nodes are on the same level if they have the same distance from the root.
 
 ## Examples
 
@@ -47,17 +47,17 @@ Output: 3
 
  ## 💡 Intuition Behind the Approach
 ---
-To solve this problem efficiently, we can use a level-order traversal (BFS) because it allows us to process nodes level by level:
+✅To solve this problem efficiently, we can use a level-order traversal (BFS) because it allows us to process nodes level by level:
 
-Traverse the tree using a queue.
+✅Traverse the tree using a queue.
 
-For each level, calculate the sum of all nodes at that level.
+✅For each level, calculate the sum of all nodes at that level.
 
-Store these sums in a list.
+✅Store these sums in a list.
 
-Sort the list of sums in descending order and return the k-th largest.
+✅Sort the list of sums in descending order and return the k-th largest.
 
-This approach guarantees that each node is visited exactly once, and we only need to sort the sums of levels, which is much smaller than the total number of nodes.
+✅This approach guarantees that each node is visited exactly once, and we only need to sort the sums of levels, which is much smaller than the total number of nodes.
 
 ## Approach
 
