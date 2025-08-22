@@ -12,7 +12,7 @@ You can find the original problem here:
 👉 https://leetcode.com/problems/count-beautiful-substrings-i/
 
 ---
-
+---
 ## 📝 Problem Statement
 
 You are given a string `s` and a positive integer `k`.  
