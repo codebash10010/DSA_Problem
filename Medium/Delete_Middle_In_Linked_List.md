@@ -40,7 +40,7 @@ head = [1,3,4,7,1,2,6]
 **Output:**  
 [1,3,4,1,2,6]
 
---
+---
 **Explanation:**  
 - Size `n = 7` → middle index = `⌊7/2⌋ = 3`  
 - Delete node at index 3 → value `7`.  
@@ -56,7 +56,7 @@ head = [1,2,3,4]
 **Output:**  
 [1,2,4]
 
---
+---
 **Explanation:**  
 - Size `n = 4` → middle index = `⌊4/2⌋ = 2`  
 - Delete node at index 2 → value `3`.  
@@ -73,7 +73,7 @@ head = [2,1]
 **Output:**  
 [2]
  
- --
+ ---
 **Explanation:**  
 - Size `n = 2` → middle index = `⌊2/2⌋ = 1`  
 - Delete node at index 1 → value `1`.  
