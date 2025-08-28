@@ -1,6 +1,6 @@
 # 2390. Removing Stars From a String
 
-**Difficulty:** Medium
+   **Difficulty:** 🕹️ Medium
 
 **🏢 Companies Asked:** Amazon
 
