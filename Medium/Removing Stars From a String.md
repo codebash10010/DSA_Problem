@@ -213,9 +213,9 @@ rl.question("", function(s) {
 console.log(removeStars(s.trim()));
 rl.close();
 });
-
+```
 ---
-  
+  ```
 ## Tests you can try
 
 * `"leet**cod*e"` -> `"lecoe"`
@@ -233,7 +233,7 @@ rl.close();
 ---
 
 **Tags:** string, stack, simulation, two-pointers (conceptual)
-
+```
 
 ## 🚀 How to Run
 
