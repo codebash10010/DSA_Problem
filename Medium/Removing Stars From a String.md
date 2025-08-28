@@ -215,7 +215,7 @@ rl.close();
 });
 ```
 ---
-  ```
+ 
 ## Tests you can try
 
 * `"leet**cod*e"` -> `"lecoe"`
@@ -233,7 +233,8 @@ rl.close();
 ---
 
 **Tags:** string, stack, simulation, two-pointers (conceptual)
-```
+
+---
 
 ## 🚀 How to Run
 
