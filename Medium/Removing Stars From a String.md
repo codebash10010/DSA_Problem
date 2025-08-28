@@ -1,9 +1,11 @@
 # 2390. Removing Stars From a String
 
 **Difficulty:** Medium
+
 **🏢 Companies Asked:** Amazon
 
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
 ---
@@ -251,5 +253,3 @@ Thanks for checking out this repository ❤️
 If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀
 
 ---
-
-**Tags:** string, stack, simulation, two-pointers
