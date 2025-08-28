@@ -214,5 +214,60 @@ console.log(removeStars(s.trim()));
 rl.close();
 });
 ```
+
+--- 
+## Tests you can try
+
+* `"leet**cod*e"` -> `"lecoe"`
+* `"erase*****"` -> `""`
+* `"a*b*c*"` -> `""` (interleaved removals)
+* `"abc"` -> `"abc"` (no stars)
+
 ---
- 
+
+## Notes
+
+* The stack approach is straightforward and optimal for this problem.
+* If memory must be minimized and input is streaming, the same logic applies using an output buffer and tracking its length.
+
+---
+
+**Tags:** string, stack, simulation, two-pointers (conceptual)
+
+---
+
+## 🚀 How to Run
+
+### **C++**
+```bash
+g++ solution.cpp -o solution
+./solution
+````
+
+### **Java**
+
+```bash
+javac Solution.java
+java Solution
+```
+
+### **Python**
+
+```bash
+python solution.py
+```
+
+### **JavaScript**
+
+```bash
+node solution.js
+```
+
+---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀
+
+---
