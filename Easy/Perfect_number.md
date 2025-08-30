@@ -1,33 +1,29 @@
-# Delete the Middle Node of a Linked List - (LeetCode :- 2095)
-## Difficulty:  🌿 Easy  
+# Perfect Number - (LeetCode :- 507)
+## Difficulty: 🌿 Easy  
 
-## 🏢 Companies Asked :- Adobe 
+## 🏢 Companies Asked :- Amazon, Microsoft  
 
-👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
-
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)  
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
 ---
 
 ## 🔗 Problem Link
 You can find the original problem here:  
-👉 https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+👉 https://leetcode.com/problems/perfect-number/
 
 ---
 
 ## 📝 Problem Statement
 
-You are given the `head` of a **linked list**.  
-Delete the **middle node**, and return the head of the modified linked list.  
+A **perfect number** is a positive integer that is equal to the sum of its positive divisors, excluding the number itself.  
 
-- The **middle node** of a linked list of size `n` is the `⌊n / 2⌋`th node from the start (0-indexed).  
-- If the list has only **1 node**, deleting it will result in an **empty list**.
+Given an integer `num`, return `true` if `num` is a **perfect number**, otherwise return `false`.
 
 ---
 
 ## 📌 Constraints
-- The number of nodes in the list is in the range `[1, 10⁵]`
-- `1 <= Node.val <= 10⁵`
+- `1 <= num <= 10⁸`
 
 ---
 
@@ -35,81 +31,48 @@ Delete the **middle node**, and return the head of the modified linked list.
 
 ### **Example 1**
 **Input:**  
-head = [1,3,4,7,1,2,6]
+`num = 28`  
 
 **Output:**  
-[1,3,4,1,2,6]
+`true`  
 
-**Explanation:**  
-- Size `n = 7` → middle index = `⌊7/2⌋ = 3`  
-- Delete node at index 3 → value `7`.  
-
-Final List → `[1,3,4,1,2,6]`.
+**Explanation:** Divisors of 28 are `1, 2, 4, 7, 14`.  
+Their sum is `1 + 2 + 4 + 7 + 14 = 28`.
 
 ---
 
 ### **Example 2**
 **Input:**  
-head = [1,2,3,4]
+`num = 12`  
 
 **Output:**  
-[1,2,4]
+`false`  
 
-**Explanation:**  
-- Size `n = 4` → middle index = `⌊4/2⌋ = 2`  
-- Delete node at index 2 → value `3`.  
-
-Final List → `[1,2,4]`.
-
----
-
-### **Example 3**
-**Input:**  
-head = [2,1]
-
-**Output:**  
-[2]
-
-
-**Explanation:**  
-- Size `n = 2` → middle index = `⌊2/2⌋ = 1`  
-- Delete node at index 1 → value `1`.  
-
-Final List → `[2]`.
+**Explanation:** Divisors are `1, 2, 3, 4, 6`.  
+Sum = `16 ≠ 12`.
 
 ---
 
 ## 💡 Intuition Behind the Approach
 
-The problem is essentially about **removing the middle node**.  
+- A divisor always comes in pairs.  
+  For example, if `d` divides `num`, then `num / d` also divides `num`.  
+- We can iterate only till `√num` to collect divisor pairs efficiently.  
+- Exclude the number itself but include `1`.  
 
-Two common approaches:  
-
-1. **Two-pass method (easy to implement):**  
-   - First pass: Count the length `n`.  
-   - Middle = `⌊n/2⌋`.  
-   - Second pass: Traverse until node `middle - 1` and delete `middle`.  
-
-2. **One-pass method (fast & optimal):**  
-   - Use **slow and fast pointers**:  
-     - `slow` moves one step, `fast` moves two steps.  
-     - When `fast` reaches end, `slow` is at middle.  
-   - Delete the `slow` node by skipping it.  
-
-👉 Since only deletion of middle is required, **two-pointer method is optimal in O(n)** with a single traversal.
+If the **sum of divisors** equals the number, it’s a **perfect number**.
 
 ---
 
-## 📚 Algorithm Explanation
+## 📚 Algorithm
 
-- Initialize two pointers: `slow` and `fast`, and a `prev` to track node before `slow`.  
-- Traverse:  
-  - Move `slow` by 1 step, `fast` by 2 steps.  
-  - When `fast` reaches end, `slow` will be at middle.  
-- Delete the middle:  
-  - `prev.next = slow.next`  
+1. Handle edge case: if `num <= 1`, return `false`.  
+2. Initialize `sum = 1` (since 1 is always a divisor).  
+3. Loop from `2` to `√num`:  
+   - If `i` divides `num`, add both `i` and `num / i` to `sum`.  
+4. After loop, check if `sum == num`.  
 
-**Time Complexity:** `O(n)`  
+**Time Complexity:** `O(√n)`  
 **Space Complexity:** `O(1)`
 
 ---
@@ -119,63 +82,30 @@ Two common approaches:
 ### **C++**
 ```cpp
 #include <iostream>
+#include <cmath>
 using namespace std;
-
-struct ListNode {
-    int val;
-    ListNode* next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
 
 class Solution {
 public:
-    ListNode* deleteMiddle(ListNode* head) {
-        if (!head || !head->next) return NULL; // only one node
-
-        ListNode* slow = head;
-        ListNode* fast = head;
-        ListNode* prev = NULL;
-
-        while (fast && fast->next) {
-            prev = slow;
-            slow = slow->next;
-            fast = fast->next->next;
+    bool checkPerfectNumber(int num) {
+        if (num <= 1) return false;
+        int sum = 1;
+        for (int i = 2; i <= sqrt(num); i++) {
+            if (num % i == 0) {
+                sum += i;
+                if (i != num / i) sum += num / i;
+            }
         }
-
-        // delete middle
-        prev->next = slow->next;
-        return head;
+        return sum == num;
     }
 };
 
-// Driver code
 int main() {
-    int n;
-    cout << "Enter number of nodes: ";
-    cin >> n;
-    ListNode* head = NULL;
-    ListNode* tail = NULL;
-    cout << "Enter elements: ";
-    for (int i = 0; i < n; i++) {
-        int x; cin >> x;
-        if (!head) {
-            head = tail = new ListNode(x);
-        } else {
-            tail->next = new ListNode(x);
-            tail = tail->next;
-        }
-    }
-
+    int n; cin >> n;
     Solution sol;
-    head = sol.deleteMiddle(head);
-
-    cout << "List after deletion: ";
-    ListNode* cur = head;
-    while (cur) {
-        cout << cur->val << " ";
-        cur = cur->next;
-    }
+    cout << (sol.checkPerfectNumber(n) ? "true" : "false");
 }
+
 ```
 ---
 
@@ -184,54 +114,29 @@ int main() {
 ```java
 import java.util.*;
 
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; }
-}
-
 class Solution {
-    public ListNode deleteMiddle(ListNode head) {
-        if (head == null || head.next == null) return null;
-
-        ListNode slow = head, fast = head, prev = null;
-        while (fast != null && fast.next != null) {
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
+    public boolean checkPerfectNumber(int num) {
+        if (num <= 1) return false;
+        int sum = 1;
+        for (int i = 2; i * i <= num; i++) {
+            if (num % i == 0) {
+                sum += i;
+                if (i != num / i) sum += num / i;
+            }
         }
-        prev.next = slow.next; // delete middle
-        return head;
+        return sum == num;
     }
 }
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of nodes: ");
         int n = sc.nextInt();
-        ListNode head = null, tail = null;
-        System.out.println("Enter elements: ");
-        for (int i = 0; i < n; i++) {
-            int x = sc.nextInt();
-            if (head == null) {
-                head = tail = new ListNode(x);
-            } else {
-                tail.next = new ListNode(x);
-                tail = tail.next;
-            }
-        }
         Solution sol = new Solution();
-        head = sol.deleteMiddle(head);
-
-        System.out.print("List after deletion: ");
-        ListNode cur = head;
-        while (cur != null) {
-            System.out.print(cur.val + " ");
-            cur = cur.next;
-        }
+        System.out.println(sol.checkPerfectNumber(n));
     }
 }
+
 
 ```
 
@@ -240,51 +145,24 @@ public class Main {
 ### Python
 
 ```python
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+import math
 
 class Solution:
-    def deleteMiddle(self, head: ListNode) -> ListNode:
-        if not head or not head.next:
-            return None
-
-        slow, fast = head, head
-        prev = None
-
-        while fast and fast.next:
-            prev = slow
-            slow = slow.next
-            fast = fast.next.next
-
-        prev.next = slow.next
-        return head
-
-# Driver code
-def build_list(arr):
-    head = ListNode(arr[0])
-    cur = head
-    for x in arr[1:]:
-        cur.next = ListNode(x)
-        cur = cur.next
-    return head
-
-def print_list(head):
-    cur = head
-    while cur:
-        print(cur.val, end=" ")
-        cur = cur.next
-    print()
+    def checkPerfectNumber(self, num: int) -> bool:
+        if num <= 1:
+            return False
+        total = 1
+        for i in range(2, int(math.sqrt(num)) + 1):
+            if num % i == 0:
+                total += i
+                if i != num // i:
+                    total += num // i
+        return total == num
 
 if __name__ == "__main__":
-    n = int(input("Enter number of nodes: "))
-    arr = list(map(int, input("Enter elements: ").split()))
-    head = build_list(arr)
+    n = int(input())
     sol = Solution()
-    head = sol.deleteMiddle(head)
-    print("List after deletion:", end=" ")
-    print_list(head)
+    print(sol.checkPerfectNumber(n))
 
 ```
 
@@ -293,25 +171,17 @@ if __name__ == "__main__":
 ### JavaScript 
 
 ```javascript
-class ListNode {
-    constructor(val) {
-        this.val = val;
-        this.next = null;
-    }
-}
-
 class Solution {
-    deleteMiddle(head) {
-        if (!head || !head.next) return null;
-
-        let slow = head, fast = head, prev = null;
-        while (fast && fast.next) {
-            prev = slow;
-            slow = slow.next;
-            fast = fast.next.next;
+    checkPerfectNumber(num) {
+        if (num <= 1) return false;
+        let sum = 1;
+        for (let i = 2; i * i <= num; i++) {
+            if (num % i === 0) {
+                sum += i;
+                if (i !== num / i) sum += num / i;
+            }
         }
-        prev.next = slow.next;
-        return head;
+        return sum === num;
     }
 }
 
@@ -321,37 +191,13 @@ const readline = require("readline").createInterface({
     output: process.stdout,
 });
 
-function buildList(arr) {
-    let head = new ListNode(arr[0]);
-    let cur = head;
-    for (let i = 1; i < arr.length; i++) {
-        cur.next = new ListNode(arr[i]);
-        cur = cur.next;
-    }
-    return head;
-}
-
-function printList(head) {
-    let cur = head;
-    let res = [];
-    while (cur) {
-        res.push(cur.val);
-        cur = cur.next;
-    }
-    console.log(res.join(" "));
-}
-
-readline.question("Enter number of nodes: ", (nStr) => {
-    readline.question("Enter elements: ", (arrStr) => {
-        const arr = arrStr.trim().split(" ").map(Number);
-        let head = buildList(arr);
-        const sol = new Solution();
-        head = sol.deleteMiddle(head);
-        console.log("List after deletion:");
-        printList(head);
-        readline.close();
-    });
+readline.question("Enter number: ", (nStr) => {
+    const n = parseInt(nStr);
+    const sol = new Solution();
+    console.log(sol.checkPerfectNumber(n));
+    readline.close();
 });
+
 
 ```
 
