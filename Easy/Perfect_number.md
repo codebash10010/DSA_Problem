@@ -1,7 +1,7 @@
 # Perfect Number - (LeetCode :- 507)
 ## Difficulty: 🌿 Easy  
 
-## 🏢 Companies Asked :- Amazon 
+## 🏢 Companies Asked :- Amazon, Microsoft  
 
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)  
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
@@ -203,24 +203,22 @@ readline.question("Enter number: ", (nStr) => {
 
 ---
 
-
 ## 🧪 Tests You Can Try
 
-Input: ["h","e","l","l","o"]  
-Output: ["o","l","l","e","h"]  
+Input: 28
+Output: true
 
-Input: ["H","a","n","n","a","h"]  
-Output: ["h","a","n","n","a","H"]  
+Input: 12
+Output: false
 
-Input: ["a","b","c"]  
-Output: ["c","b","a"]  
+Input: 6
+Output: true
 
-Input: ["z"]  
-Output: ["z"]  
+Input: 496
+Output: true
 
-Input: ["p","y","t","h","o","n"]  
-Output: ["n","o","h","t","y","p"]  
-
+Input: 25
+Output: false
 
 ---
 
