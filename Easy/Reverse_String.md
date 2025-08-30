@@ -223,20 +223,20 @@ readline.question("Enter size of string: ", (nStr) => {
 
 ## 🧪 Tests You Can Try
 
-Input: 28
-Output: true
+Input: ["h","e","l","l","o"]  
+Output: ["o","l","l","e","h"]
 
-Input: 12
-Output: false
+Input: ["H","a","n","n","a","h"]  
+Output: ["h","a","n","n","a","H"]
 
-Input: 6
-Output: true
+Input: ["a","b","c"]  
+Output: ["c","b","a"]
 
-Input: 496
-Output: true
+Input: ["z"]  
+Output: ["z"]
 
-Input: 25
-Output: false
+Input: ["p","y","t","h","o","n"]  
+Output: ["n","o","h","t","y","p"]
 
 ---
 
