@@ -218,7 +218,6 @@ readline.question("Enter column number: ", (numStr) => {
 
 ---
 
----
 
 ## 🚀 How to Run
 
