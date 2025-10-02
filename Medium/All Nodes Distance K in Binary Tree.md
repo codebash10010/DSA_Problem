@@ -1,10 +1,3 @@
-Perfect 👌 You want me to create a **full `.md` write-up** for **LeetCode 863: All Nodes Distance K in Binary Tree** (just like I did for 1361), including problem statement, intuition, algorithm, and implementations with driver code.
-
-Here’s the `.md`:
-
----
-
-```markdown
 # 863. All Nodes Distance K in Binary Tree
 
 **Difficulty:** 🟠 Medium  
