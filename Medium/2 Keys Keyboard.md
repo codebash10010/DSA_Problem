@@ -207,11 +207,42 @@ readline.question("Enter n: ", (nStr) => {
 ```
 
 ---
-## 🙏 Thanks
 
-If this helped you, please ⭐ the repo & share it ❤️🚀
+## 🚀 How to Run
 
+### **C++**
+```bash
+g++ solution.cpp -o solution
+./solution
+```
+
+### **Java**
+```bash
+javac Solution.java
+java Solution
+```
+
+### **Python**
+```bash
+python solution.py
+```
+
+### **JavaScript**
+```bash
+node solution.js
 ```
 
 ---
+
+## 🙏 Thanks
+
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
+
+---
+
+
+
+
+
 

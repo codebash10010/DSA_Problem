@@ -252,23 +252,37 @@ class Solution {
 
 ## 🚀 How to Run
 
-* For **C++/Java/Python/JS**, build tree input manually or extend driver code to parse arrays.
-* Example: `[1,2,3,null,4]` → binary tree:
-
+### **C++**
+```bash
+g++ solution.cpp -o solution
+./solution
 ```
-       1
-     /   \
-    2     3
-     \
-      4
+
+### **Java**
+```bash
+javac Solution.java
+java Solution
+```
+
+### **Python**
+```bash
+python solution.py
+```
+
+### **JavaScript**
+```bash
+node solution.js
 ```
 
 ---
 
 ## 🙏 Thanks
 
-If this helped you, please ⭐ the repo & share it ❤️🚀
-
-```
+Thanks for checking out this repository ❤️  
+If you found it helpful, don’t forget to ⭐ **star this repo** and share it with others! 🚀  
 
 ---
+
+
+
+
