@@ -3,11 +3,13 @@
 ## 🏢 Companies Asked :- Amazon , Microsoft , Google , Bloomberg , Adobe  
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
 ---
 
-## 🔗 Problem Link
-You can find the original problem here:  
-👉 https://leetcode.com/problems/rearrange-array-elements-by-sign/
+**Difficulty:** 🟠 Medium  
+
+[🔗 Problem Link] (https://leetcode.com/problems/rearrange-array-elements-by-sign/)
 
 ---
 
