@@ -1,15 +1,16 @@
-Here’s a detailed `.md` documentation for **LeetCode 542: 01 Matrix** in the style you like:
 
----
-
-```markdown
 # 01 Matrix - (LeetCode :- 542)
 
 ## 🏢 Companies Asked  
 Amazon, Google, Facebook, Microsoft, etc.  
-👉 [Watch on YouTube](https://www.youtube.com/watch?v=Ezj3VDOfd5I) :contentReference[oaicite:0]{index=0}  
 
----
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
+**Difficulty:** 🟠 Medium 
+ 
+ ---
 
 ## 🔗 Problem Link  
 You can find the original problem here:  
