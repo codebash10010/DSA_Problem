@@ -10,7 +10,7 @@
 **Difficulty:** 🟠 Medium  
 
 
-[🔗 Problem Link](https://leetcode.com/problems/validate-binary-tree-nodes/)
+[🔗 Problem Link] (https://leetcode.com/problems/validate-binary-tree-nodes/)
 
 ---
 
