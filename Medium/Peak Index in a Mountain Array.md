@@ -8,10 +8,9 @@
 
 ---
 
-## 🔗 Problem Link
+**Difficulty:** 🟠 Medium  
 
-You can find the original problem here:
-👉 [https://leetcode.com/problems/peak-index-in-a-mountain-array/](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+[🔗 Problem Link] (https://leetcode.com/problems/peak-index-in-a-mountain-array/)
 
 ---
 
