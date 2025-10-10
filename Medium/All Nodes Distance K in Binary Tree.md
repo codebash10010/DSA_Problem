@@ -1,7 +1,14 @@
 # 863. All Nodes Distance K in Binary Tree
 
+## 🏢 Companies Asked :- Amazon✯, Google✯, Facebook✯, Microsoft✯, Flipkart✯, Samsung, PayTM, Uber, Apple, Goldman Sachs, Naukri, Tower Research Capital, Morgan Stanley, 
+
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
 **Difficulty:** 🟠 Medium  
-[🔗 Problem Link](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
+
+[🔗 Problem Link] (https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)
 
 ---
 
