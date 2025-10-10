@@ -6,11 +6,11 @@
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
+**Difficulty:** 🟠 Medium  
+
 ---
 
-## 🔗 Problem Link
-You can find the original problem here:  
-👉 https://leetcode.com/problems/coin-change-2/description/
+[🔗 Problem Link] (https://leetcode.com/problems/coin-change-2/description/)
 
 ---
 
