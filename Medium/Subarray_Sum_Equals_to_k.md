@@ -6,6 +6,8 @@
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
+[🔗 Problem Link] (https://leetcode.com/problems/subarray-sum-equals-k/description/)
+
 ---
 
 ## 📝 Problem Statement
