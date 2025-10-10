@@ -1,9 +1,13 @@
 # Adding Spaces to a String - (LeetCode :- 2109)
 
 ## 🏢 Companies Asked :- Amazon, Google, Microsoft, Adobe, Bloomberg  
+
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
+**Difficulty:** 🟠 Medium 
+
 ---
 
 ## 🔗 Problem Link
