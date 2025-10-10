@@ -5,11 +5,9 @@
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
----
+**Difficulty:** 🟠 Medium  
 
-## 🔗 Problem Link
-You can find the original problem here:  
-👉 https://leetcode.com/problems/count-beautiful-substrings-i/
+[🔗 Problem Link] (https://leetcode.com/problems/count-beautiful-substrings-i/)
 
 ---
 
