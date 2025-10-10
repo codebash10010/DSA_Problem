@@ -3,12 +3,12 @@
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
 ---
 
-## 🔗 Problem Link
-You can find the original problem here:  
+**Difficulty:** 🟠 Medium  
 
-👉 https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/
+[🔗 Problem Link] (https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/description/)
 
 ---
 
