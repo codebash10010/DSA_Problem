@@ -1,7 +1,12 @@
 # 2 Keys Keyboard - (LeetCode :- 650)
 
 ## 🏢 Companies Asked :- Microsoft 
-👉 [Watch on YouTube](https://www.youtube.com/watch?v=jNfZH3mdjOA) :contentReference[oaicite:0]{index=0}
+
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
+
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
+**Difficulty:** 🟠 Medium 
 
 ---
 
