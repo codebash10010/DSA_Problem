@@ -1,16 +1,14 @@
 # Add Two Numbers II - (LeetCode :- 445)
 
-## Difficulty: 🟠 Medium
-
----
+## 🏢 Companies Asked :- DoorDash✯, TikTok✯, Facebook✯, Amazon✯, Adobe✯, Google, Goldman Sachs, Microsoft, Apple, DE Shaw, Bloomberg
 
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
----
+**Difficulty:** 🟠 Medium  
 
-👉 [Problem Link](https://leetcode.com/problems/add-two-numbers-ii/)
+👉 [Problem Link] (https://leetcode.com/problems/add-two-numbers-ii/description/)
 
 ---
 
