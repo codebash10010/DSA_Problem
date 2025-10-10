@@ -8,10 +8,9 @@
 
 ---
 
-## 🔗 Problem Link
+**Difficulty:** 🟠 Medium  
 
-You can find the original problem here:
-👉 [https://leetcode.com/problems/maximum-length-of-pair-chain/](https://leetcode.com/problems/maximum-length-of-pair-chain/)
+[🔗 Problem Link] (https://leetcode.com/problems/maximum-length-of-pair-chain/)
 
 ---
 
