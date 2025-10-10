@@ -8,7 +8,11 @@
 
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
----
+**Difficulty:** 🟠 Medium  
+
+[🔗 Problem Link] (https://leetcode.com/problems/removing-stars-from-a-string/description/)
+
+----
 
 ## Problem
 
