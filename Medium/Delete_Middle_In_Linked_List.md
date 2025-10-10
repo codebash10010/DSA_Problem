@@ -8,10 +8,9 @@
 👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
 
 ---
+**Difficulty:** 🟠 Medium  
 
-## 🔗 Problem Link
-You can find the original problem here:  
-👉 https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
+[🔗 Problem Link] (https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)
 
 ---
 
