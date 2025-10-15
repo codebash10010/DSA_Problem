@@ -1,39 +1,69 @@
+# Add Two Integers (Using Bit Manipulation) — (LeetCode :- 2235)
 
-## Add Two Integers (Using Bit Manipulation) — (LeetCode :- 2235)
-🏢 Companies Asked :- Amazon ✯, Google ✯, Microsoft ✯, Meta ✯
-👉 Problem Link👉 Watch on YouTube
-Difficulty: 🟢 Easy
+## 🏢 Companies Asked :- Amazon ✯, Google ✯, Microsoft ✯, Meta ✯
 
-🧩 Problem Statement
-Given two integers num1 and num2, return the sum of the two integers, without using the '+' or '-' operators.
+👉 [Problem Link](https://leetcode.com/problems/add-two-integers/)
+👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
-💡 Intuition
-Normally we add two numbers using the + operator, but we can also simulate addition using bitwise operations.
-* XOR (^) → gives the sum of bits without carrying.
-* AND (&) → finds which bits will produce a carry.
-* We then left shift the carry (<< 1) because a carry affects the next higher bit.
+**Difficulty:** 🟢 Easy
+
+---
+
+## 🧩 Problem Statement
+
+Given two integers `num1` and `num2`, return *the sum of the two integers*, **without using the '+' or '-' operators**.
+
+---
+
+## 💡 Intuition
+
+Normally we add two numbers using the `+` operator, but we can also simulate addition using **bitwise operations**.
+
+* **XOR (`^`)** → gives the sum of bits without carrying.
+* **AND (`&`)** → finds which bits will produce a carry.
+* We then **left shift the carry (<< 1)** because a carry affects the next higher bit.
+
 Repeat until no carry remains.
 
-⚙️ Approach (Bit Manipulation Logic)
-1. While carry != 0
-    * carry = (a & b) << 1 — find carry bits
-    * a = a ^ b — add bits without carry
-    * b = carry — add carry in the next iteration
-2. Return a
+---
 
-🧠 Dry Run Example
+## ⚙️ Approach (Bit Manipulation Logic)
+
+1. While `carry != 0`
+
+   * `carry = (a & b) << 1` — find carry bits
+   * `a = a ^ b` — add bits without carry
+   * `b = carry` — add carry in the next iteration
+2. Return `a`
+
+---
+
+## 🧠 Dry Run Example
+
 Example:
+
+```
 num1 = 5 (0101)
 num2 = 3 (0011)
-Step	a (num1)	b (num2)	Carry	XOR Result	Next a	Next b
-1	0101	0011	0001<<1 = 0110	0110	0110	0110
-2	0110	0110	0110<<1=1100	0000	0000	1100
-3	0000	1100	0000	1100	1100	0000
-Final Answer: 1100 → 8
+```
 
-🧩 Code Implementations (with User Input)
+| Step | a (num1) | b (num2) | Carry          | XOR Result | Next a | Next b |
+| ---- | -------- | -------- | -------------- | ---------- | ------ | ------ |
+| 1    | 0101     | 0011     | 0001<<1 = 0110 | 0110       | 0110   | 0110   |
+| 2    | 0110     | 0110     | 0110<<1=1100   | 0000       | 0000   | 1100   |
+| 3    | 0000     | 1100     | 0000           | 1100       | 1100   | 0000   |
 
-🧱 C++
+Final Answer: `1100` → **8**
+
+---
+
+## 🧩 Code Implementations (with User Input)
+
+---
+
+### 🧱 C++
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -52,8 +82,13 @@ int main() {
     cout << add(a, b) << "\n";
     return 0;
 }
+```
 
-☕ Java
+---
+
+### ☕ Java
+
+```java
 import java.util.*;
 
 public class Main {
@@ -73,8 +108,13 @@ public class Main {
         sc.close();
     }
 }
+```
 
-🐍 Python
+---
+
+### 🐍 Python
+
+```python
 def add(a: int, b: int) -> int:
     mask = 0xFFFFFFFF
     while b != 0:
@@ -86,8 +126,13 @@ def add(a: int, b: int) -> int:
 if __name__ == "__main__":
     a, b = map(int, input().split())
     print(add(a, b))
+```
 
-⚡ C
+---
+
+### ⚡ C
+
+```c
 #include <stdio.h>
 
 int add(int a, int b) {
@@ -105,17 +150,31 @@ int main() {
     printf("%d\n", add(a, b));
     return 0;
 }
+```
 
-🧪 Sample Run
-Input
+---
+
+## 🧪 Sample Run
+
+**Input**
+
+```
 5 3
-Output
-8
+```
 
-⏱ Complexity
-* Time Complexity: O(1) — constant number of bit operations (32 times max)
-* Space Complexity: O(1)
-* 
+**Output**
+
+```
+8
+```
+
+---
+
+## ⏱ Complexity
+
+* **Time Complexity:** O(1) — constant number of bit operations (32 times max)
+* **Space Complexity:** O(1)
+
 ---
 
 ## 🚀 How to Run
