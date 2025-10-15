@@ -2,10 +2,16 @@
 
 ## 🏢 Companies Asked :- Amazon ✯, Google ✯, Microsoft ✯, Meta ✯
 
-👉 [Problem Link](https://leetcode.com/problems/add-two-integers/)
 👉 [Watch on YouTube](https://youtube.com/@codebash10010?si=_iT9ZHNks9ZaN4d5)
 
-**Difficulty:** 🟢 Easy
+👉 [Watch on Instagram](https://www.instagram.com/codebash.official/)
+
+---
+
+## 🔗 Problem Link
+👉 [Problem Link](https://leetcode.com/problems/add-two-integers/)
+
+**Difficulty:** 🟢 Easy  
 
 ---
 
