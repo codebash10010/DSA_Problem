@@ -173,6 +173,26 @@ if __name__ == "__main__":
     print(bulbSwitch(n))
 ```
 
+### 🐍 JavaScript
+
+```JavaScript
+function bulbSwitch(n) {
+  // The bulbs that are perfect squares remain on
+  return Math.floor(Math.sqrt(n));
+}
+
+// Example with user input
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+readline.question("Enter number of bulbs (n): ", (line) => {
+  const n = parseInt(line);
+  console.log("Number of bulbs ON after all rounds:", bulbSwitch(n));
+  readline.close();
+});
+```
 ---
 
 ## 🧪 Sample Runs
