@@ -212,6 +212,46 @@ if __name__ == "__main__":
 
 ---
 
+### 💻 JavaScript
+
+```javascript
+function addStrings(num1, num2) {
+  let i = num1.length - 1;
+  let j = num2.length - 1;
+  let carry = 0;
+  let result = [];
+
+  while (i >= 0 || j >= 0 || carry) {
+    let a = i >= 0 ? num1[i] - '0' : 0;
+    let b = j >= 0 ? num2[j] - '0' : 0;
+    let sum = a + b + carry;
+    result.push(sum % 10);
+    carry = Math.floor(sum / 10);
+    i--;
+    j--;
+  }
+
+  return result.reverse().join('');
+}
+
+// User Input
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+readline.question("Enter first number: ", (num1) => {
+  readline.question("Enter second number: ", (num2) => {
+    console.log("Sum:", addStrings(num1.trim(), num2.trim()));
+    readline.close();
+  });
+});
+
+```
+
+
+---
+
 ## 🧪 Sample Runs
 
 **Input**
